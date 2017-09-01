@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3E6701891F53C61C00F3DDCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6701881F53C61C00F3DDCA /* main.m */; };
+		3E67018C1F53C61C00F3DDCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E67018B1F53C61C00F3DDCA /* AppDelegate.m */; };
+		3E6701921F53C61C00F3DDCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6701901F53C61C00F3DDCA /* Main.storyboard */; };
+		3E6701941F53C61D00F3DDCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E6701931F53C61D00F3DDCA /* Assets.xcassets */; };
+		3E6701971F53C61D00F3DDCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3E6701951F53C61D00F3DDCA /* LaunchScreen.storyboard */; };
+		3E6701A21F53C62200F3DDCA /* ZYOpenGL_DepthTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6701A11F53C62200F3DDCA /* ZYOpenGL_DepthTestTests.m */; };
+		3E6701AD1F53C62200F3DDCA /* ZYOpenGL_DepthTestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3E6701AC1F53C62200F3DDCA /* ZYOpenGL_DepthTestUITests.m */; };
+		3EBC80FD1F5517F6006C525C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC80ED1F5517F6006C525C /* ViewController.m */; };
+		3EBC80FE1F5517F6006C525C /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC80F11F5517F6006C525C /* GLESUtils.m */; };
+		3EBC81001F5517F6006C525C /* ZYProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC80F51F5517F6006C525C /* ZYProgram.m */; };
+		3EBC81011F5517F6006C525C /* container2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC80F71F5517F6006C525C /* container2.png */; };
+		3EBC81021F5517F6006C525C /* floor.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC80F81F5517F6006C525C /* floor.png */; };
+		3EBC81031F5517F6006C525C /* grass.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC80F91F5517F6006C525C /* grass.png */; };
+		3EBC81051F5517F6006C525C /* window.png in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC80FB1F5517F6006C525C /* window.png */; };
+		3ED388C31F57B473005287D4 /* ZYCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ED388C21F57B473005287D4 /* ZYCamera.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3E67019E1F53C62200F3DDCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E67017C1F53C61B00F3DDCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E6701831F53C61B00F3DDCA;
+			remoteInfo = "ZYOpenGL-DepthTest";
+		};
+		3E6701A91F53C62200F3DDCA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3E67017C1F53C61B00F3DDCA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3E6701831F53C61B00F3DDCA;
+			remoteInfo = "ZYOpenGL-DepthTest";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3E6701841F53C61B00F3DDCA /* ZYOpenGL-DepthTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ZYOpenGL-DepthTest.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6701881F53C61C00F3DDCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3E67018A1F53C61C00F3DDCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3E67018B1F53C61C00F3DDCA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3E6701911F53C61C00F3DDCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3E6701931F53C61D00F3DDCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3E6701961F53C61D00F3DDCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3E6701981F53C61D00F3DDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E67019D1F53C62200F3DDCA /* ZYOpenGL-DepthTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZYOpenGL-DepthTestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6701A11F53C62200F3DDCA /* ZYOpenGL_DepthTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYOpenGL_DepthTestTests.m; sourceTree = "<group>"; };
+		3E6701A31F53C62200F3DDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3E6701A81F53C62200F3DDCA /* ZYOpenGL-DepthTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ZYOpenGL-DepthTestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E6701AC1F53C62200F3DDCA /* ZYOpenGL_DepthTestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYOpenGL_DepthTestUITests.m; sourceTree = "<group>"; };
+		3E6701AE1F53C62200F3DDCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3EBC80EC1F5517F6006C525C /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3EBC80ED1F5517F6006C525C /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3EBC80EF1F5517F6006C525C /* Const.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Const.h; sourceTree = "<group>"; };
+		3EBC80F01F5517F6006C525C /* GLESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		3EBC80F11F5517F6006C525C /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		3EBC80F41F5517F6006C525C /* ZYProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYProgram.h; sourceTree = "<group>"; };
+		3EBC80F51F5517F6006C525C /* ZYProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYProgram.m; sourceTree = "<group>"; };
+		3EBC80F71F5517F6006C525C /* container2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = container2.png; sourceTree = "<group>"; };
+		3EBC80F81F5517F6006C525C /* floor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = floor.png; sourceTree = "<group>"; };
+		3EBC80F91F5517F6006C525C /* grass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = grass.png; sourceTree = "<group>"; };
+		3EBC80FB1F5517F6006C525C /* window.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = window.png; sourceTree = "<group>"; };
+		3EBC81461F553ACA006C525C /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		3EBC81481F553B0F006C525C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		3ED388C11F57B473005287D4 /* ZYCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYCamera.h; sourceTree = "<group>"; };
+		3ED388C21F57B473005287D4 /* ZYCamera.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYCamera.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3E6701811F53C61B00F3DDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E67019A1F53C62200F3DDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6701A51F53C62200F3DDCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E67017B1F53C61B00F3DDCA = {
+			isa = PBXGroup;
+			children = (
+				3E6701861F53C61C00F3DDCA /* ZYOpenGL-DepthTest */,
+				3E6701A01F53C62200F3DDCA /* ZYOpenGL-DepthTestTests */,
+				3E6701AB1F53C62200F3DDCA /* ZYOpenGL-DepthTestUITests */,
+				3E6701851F53C61B00F3DDCA /* Products */,
+				3EBC81451F553ACA006C525C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3E6701851F53C61B00F3DDCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E6701841F53C61B00F3DDCA /* ZYOpenGL-DepthTest.app */,
+				3E67019D1F53C62200F3DDCA /* ZYOpenGL-DepthTestTests.xctest */,
+				3E6701A81F53C62200F3DDCA /* ZYOpenGL-DepthTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3E6701861F53C61C00F3DDCA /* ZYOpenGL-DepthTest */ = {
+			isa = PBXGroup;
+			children = (
+				3E67018A1F53C61C00F3DDCA /* AppDelegate.h */,
+				3E67018B1F53C61C00F3DDCA /* AppDelegate.m */,
+				3EBC80EB1F5517F6006C525C /* Controller */,
+				3EBC80EE1F5517F6006C525C /* Model */,
+				3EBC80F61F5517F6006C525C /* Source */,
+				3EBC80FC1F5517F6006C525C /* View */,
+				3E6701901F53C61C00F3DDCA /* Main.storyboard */,
+				3E6701931F53C61D00F3DDCA /* Assets.xcassets */,
+				3E6701951F53C61D00F3DDCA /* LaunchScreen.storyboard */,
+				3E6701981F53C61D00F3DDCA /* Info.plist */,
+				3E6701871F53C61C00F3DDCA /* Supporting Files */,
+			);
+			path = "ZYOpenGL-DepthTest";
+			sourceTree = "<group>";
+		};
+		3E6701871F53C61C00F3DDCA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3E6701881F53C61C00F3DDCA /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3E6701A01F53C62200F3DDCA /* ZYOpenGL-DepthTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E6701A11F53C62200F3DDCA /* ZYOpenGL_DepthTestTests.m */,
+				3E6701A31F53C62200F3DDCA /* Info.plist */,
+			);
+			path = "ZYOpenGL-DepthTestTests";
+			sourceTree = "<group>";
+		};
+		3E6701AB1F53C62200F3DDCA /* ZYOpenGL-DepthTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E6701AC1F53C62200F3DDCA /* ZYOpenGL_DepthTestUITests.m */,
+				3E6701AE1F53C62200F3DDCA /* Info.plist */,
+			);
+			path = "ZYOpenGL-DepthTestUITests";
+			sourceTree = "<group>";
+		};
+		3EBC80EB1F5517F6006C525C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC80EC1F5517F6006C525C /* ViewController.h */,
+				3EBC80ED1F5517F6006C525C /* ViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		3EBC80EE1F5517F6006C525C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC80EF1F5517F6006C525C /* Const.h */,
+				3EBC80F01F5517F6006C525C /* GLESUtils.h */,
+				3EBC80F11F5517F6006C525C /* GLESUtils.m */,
+				3EBC80F41F5517F6006C525C /* ZYProgram.h */,
+				3EBC80F51F5517F6006C525C /* ZYProgram.m */,
+				3ED388C11F57B473005287D4 /* ZYCamera.h */,
+				3ED388C21F57B473005287D4 /* ZYCamera.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3EBC80F61F5517F6006C525C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC80F71F5517F6006C525C /* container2.png */,
+				3EBC80F81F5517F6006C525C /* floor.png */,
+				3EBC80F91F5517F6006C525C /* grass.png */,
+				3EBC80FB1F5517F6006C525C /* window.png */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		3EBC80FC1F5517F6006C525C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3EBC81451F553ACA006C525C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3EBC81481F553B0F006C525C /* libz.tbd */,
+				3EBC81461F553ACA006C525C /* libstdc++.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3E6701831F53C61B00F3DDCA /* ZYOpenGL-DepthTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6701B11F53C62200F3DDCA /* Build configuration list for PBXNativeTarget "ZYOpenGL-DepthTest" */;
+			buildPhases = (
+				3E6701801F53C61B00F3DDCA /* Sources */,
+				3E6701811F53C61B00F3DDCA /* Frameworks */,
+				3E6701821F53C61B00F3DDCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ZYOpenGL-DepthTest";
+			productName = "ZYOpenGL-DepthTest";
+			productReference = 3E6701841F53C61B00F3DDCA /* ZYOpenGL-DepthTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3E67019C1F53C62200F3DDCA /* ZYOpenGL-DepthTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6701B41F53C62200F3DDCA /* Build configuration list for PBXNativeTarget "ZYOpenGL-DepthTestTests" */;
+			buildPhases = (
+				3E6701991F53C62200F3DDCA /* Sources */,
+				3E67019A1F53C62200F3DDCA /* Frameworks */,
+				3E67019B1F53C62200F3DDCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E67019F1F53C62200F3DDCA /* PBXTargetDependency */,
+			);
+			name = "ZYOpenGL-DepthTestTests";
+			productName = "ZYOpenGL-DepthTestTests";
+			productReference = 3E67019D1F53C62200F3DDCA /* ZYOpenGL-DepthTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3E6701A71F53C62200F3DDCA /* ZYOpenGL-DepthTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3E6701B71F53C62200F3DDCA /* Build configuration list for PBXNativeTarget "ZYOpenGL-DepthTestUITests" */;
+			buildPhases = (
+				3E6701A41F53C62200F3DDCA /* Sources */,
+				3E6701A51F53C62200F3DDCA /* Frameworks */,
+				3E6701A61F53C62200F3DDCA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3E6701AA1F53C62200F3DDCA /* PBXTargetDependency */,
+			);
+			name = "ZYOpenGL-DepthTestUITests";
+			productName = "ZYOpenGL-DepthTestUITests";
+			productReference = 3E6701A81F53C62200F3DDCA /* ZYOpenGL-DepthTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3E67017C1F53C61B00F3DDCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = wpsd;
+				TargetAttributes = {
+					3E6701831F53C61B00F3DDCA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X46N782Q77;
+						ProvisioningStyle = Automatic;
+					};
+					3E67019C1F53C62200F3DDCA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X46N782Q77;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3E6701831F53C61B00F3DDCA;
+					};
+					3E6701A71F53C62200F3DDCA = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X46N782Q77;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3E6701831F53C61B00F3DDCA;
+					};
+				};
+			};
+			buildConfigurationList = 3E67017F1F53C61B00F3DDCA /* Build configuration list for PBXProject "ZYOpenGL-DepthTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3E67017B1F53C61B00F3DDCA;
+			productRefGroup = 3E6701851F53C61B00F3DDCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3E6701831F53C61B00F3DDCA /* ZYOpenGL-DepthTest */,
+				3E67019C1F53C62200F3DDCA /* ZYOpenGL-DepthTestTests */,
+				3E6701A71F53C62200F3DDCA /* ZYOpenGL-DepthTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3E6701821F53C61B00F3DDCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6701971F53C61D00F3DDCA /* LaunchScreen.storyboard in Resources */,
+				3EBC81051F5517F6006C525C /* window.png in Resources */,
+				3EBC81031F5517F6006C525C /* grass.png in Resources */,
+				3E6701941F53C61D00F3DDCA /* Assets.xcassets in Resources */,
+				3EBC81021F5517F6006C525C /* floor.png in Resources */,
+				3EBC81011F5517F6006C525C /* container2.png in Resources */,
+				3E6701921F53C61C00F3DDCA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E67019B1F53C62200F3DDCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6701A61F53C62200F3DDCA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E6701801F53C61B00F3DDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EBC80FD1F5517F6006C525C /* ViewController.m in Sources */,
+				3EBC81001F5517F6006C525C /* ZYProgram.m in Sources */,
+				3EBC80FE1F5517F6006C525C /* GLESUtils.m in Sources */,
+				3ED388C31F57B473005287D4 /* ZYCamera.m in Sources */,
+				3E67018C1F53C61C00F3DDCA /* AppDelegate.m in Sources */,
+				3E6701891F53C61C00F3DDCA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6701991F53C62200F3DDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6701A21F53C62200F3DDCA /* ZYOpenGL_DepthTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3E6701A41F53C62200F3DDCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E6701AD1F53C62200F3DDCA /* ZYOpenGL_DepthTestUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3E67019F1F53C62200F3DDCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E6701831F53C61B00F3DDCA /* ZYOpenGL-DepthTest */;
+			targetProxy = 3E67019E1F53C62200F3DDCA /* PBXContainerItemProxy */;
+		};
+		3E6701AA1F53C62200F3DDCA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3E6701831F53C61B00F3DDCA /* ZYOpenGL-DepthTest */;
+			targetProxy = 3E6701A91F53C62200F3DDCA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3E6701901F53C61C00F3DDCA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E6701911F53C61C00F3DDCA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3E6701951F53C61D00F3DDCA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3E6701961F53C61D00F3DDCA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3E6701AF1F53C62200F3DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3E6701B01F53C62200F3DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3E6701B21F53C62200F3DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X46N782Q77;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ZYOpenGL-DepthTest/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYOpenGL-DepthTest",
+					"$(PROJECT_DIR)/ZYOpenGL-DepthTest/Source",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wpsd.ZYOpenGL-DepthTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3E6701B31F53C62200F3DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X46N782Q77;
+				HEADER_SEARCH_PATHS = "";
+				INFOPLIST_FILE = "ZYOpenGL-DepthTest/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ZYOpenGL-DepthTest",
+					"$(PROJECT_DIR)/ZYOpenGL-DepthTest/Source",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "wpsd.ZYOpenGL-DepthTest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3E6701B51F53C62200F3DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X46N782Q77;
+				INFOPLIST_FILE = "ZYOpenGL-DepthTestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wpsd.ZYOpenGL-DepthTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYOpenGL-DepthTest.app/ZYOpenGL-DepthTest";
+			};
+			name = Debug;
+		};
+		3E6701B61F53C62200F3DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X46N782Q77;
+				INFOPLIST_FILE = "ZYOpenGL-DepthTestTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wpsd.ZYOpenGL-DepthTestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYOpenGL-DepthTest.app/ZYOpenGL-DepthTest";
+			};
+			name = Release;
+		};
+		3E6701B81F53C62200F3DDCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = X46N782Q77;
+				INFOPLIST_FILE = "ZYOpenGL-DepthTestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wpsd.ZYOpenGL-DepthTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ZYOpenGL-DepthTest";
+			};
+			name = Debug;
+		};
+		3E6701B91F53C62200F3DDCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = X46N782Q77;
+				INFOPLIST_FILE = "ZYOpenGL-DepthTestUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "wpsd.ZYOpenGL-DepthTestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "ZYOpenGL-DepthTest";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3E67017F1F53C61B00F3DDCA /* Build configuration list for PBXProject "ZYOpenGL-DepthTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6701AF1F53C62200F3DDCA /* Debug */,
+				3E6701B01F53C62200F3DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6701B11F53C62200F3DDCA /* Build configuration list for PBXNativeTarget "ZYOpenGL-DepthTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6701B21F53C62200F3DDCA /* Debug */,
+				3E6701B31F53C62200F3DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6701B41F53C62200F3DDCA /* Build configuration list for PBXNativeTarget "ZYOpenGL-DepthTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6701B51F53C62200F3DDCA /* Debug */,
+				3E6701B61F53C62200F3DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3E6701B71F53C62200F3DDCA /* Build configuration list for PBXNativeTarget "ZYOpenGL-DepthTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3E6701B81F53C62200F3DDCA /* Debug */,
+				3E6701B91F53C62200F3DDCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3E67017C1F53C61B00F3DDCA /* Project object */;
+}
